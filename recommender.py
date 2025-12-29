@@ -3,11 +3,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-df = pd.read_csv("data/movies.csv")
+df = pd.read_csv("data/movies.csv", usecols=["title","genre"])
 
-vectorizer = TfidfVectorizer(
-    token_pattern=r'[^|]+'
-)
+vectorizer = TfidfVectorizer()
 genre_matrix = vectorizer.fit_transform(df['genre'])
 
 
