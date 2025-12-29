@@ -9,5 +9,5 @@ Tech Stack:
 - Scikit-learn
 
 Features:
-- Recommends top-K similar movies
+- Recommends top similar movies
 - Explainable similarity-based logic
